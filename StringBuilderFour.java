@@ -1,21 +1,21 @@
+import java.util.Scanner;
 public class StringBuilderFour{
- public static void main(String[]args){
-    StringBuilder sb=new StringBuilder("Mindset"+" "+"Matters");
+	public static void main(String[]args){
+		
+		Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the String :");
+		String string=sc.nextLine();
+		StringBuilder sb=new StringBuilder(string);
+		int space=sb.indexOf(" ");
+		StringBuilder deleteFirst=sb.delete(0,space);
+		System.out.println(deleteFirst);
+		
+		
+		
+		
+	}
 	
-	int initialLength=sb.length();
-	int index=sb.indexOf(" ");
-	System.out.println("Initial Length of the String is :"+initialLength);
-	StringBuilder deleteFirst=sb.delete(0,index);
-    int finalLength=deleteFirst.length();
-    System.out.println("After Deleting the First String :"+deleteFirst);
-    System.out.println("length After the Deletion :"+finalLength);
- 
- 
- 
- 
- 
-    }
-
-
-
+	
+	
+	
 }

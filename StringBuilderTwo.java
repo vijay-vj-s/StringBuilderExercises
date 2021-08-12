@@ -10,9 +10,9 @@ public class StringBuilderTwo{
 	sb.append("#");
 	sb.append("GHI");
 	sb.append("#");
-	StringBuilder finalString=sb.append("JKL");
+	sb.append("JKL");
 	int lengthAfterAppend=sb.length();
-	System.out.println("The Final String is :"+finalString);
+	System.out.println("The Final String is :"+sb);
 	System.out.println("Length of the Append String :"+lengthAfterAppend);
 	
 	
